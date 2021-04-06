@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for item in [1,2,3] %}
+    {% if item == 1 %}
+        <div>我的名字叫{{ user.name }}，今年{{ user.age }}岁</div>
+    {% elif item == 2 %}
+        <div>MyName is {{ user.name }}，I am {{ user.age }} year old.</div>
+    {% else %}
+        <div>呵呵哒</div>
+    {% endif %}
+{% endfor %}
+</body>
+</html>
