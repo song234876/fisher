@@ -9,7 +9,7 @@ import time
 import asyncio
 import threading
 
-# app = create_app()
+app = create_app()
 
 pool_schedular = ThreadPoolScheduler(multiprocessing.cpu_count())
 
@@ -88,5 +88,5 @@ if __name__ == "__main__":
     # asyncio.gather(delayAsync(), delayAsync())
     # loop = asyncio.get_event_loop()
     # loop.run_until_complete(call_later_demo(loop))
-    doRx()
-    # app.run(host="0.0.0.0", debug=True)
+    # doRx()
+    app.run(host="0.0.0.0", debug=True)
