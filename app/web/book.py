@@ -23,6 +23,10 @@ def search():
         flash('搜索的关键字不符合要求，请重新输入关键字')
     return "hello world"
 
+@web.route('/hello')
+def hello():
+    return "hello world"
+
 
 @web.route('/upload', methods=['POST'])
 def uploadPic():
